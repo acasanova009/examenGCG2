@@ -1,6 +1,6 @@
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+
   background: linear-gradient(
       to bottom,
       rgba(95, 90, 87, 0) 0%,
@@ -37,7 +37,6 @@ header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
-
 
 .bg-tertiary {
   --bs-bg-opacity: 1;
