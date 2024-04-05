@@ -1,17 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-body-secondary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavBarCollapse"
+          aria-controls="myNavBarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+        <div class="collapse navbar-collapse d-lg-flex" id="myNavBarCollapse">
+          <a class="navbar-brand col-lg-3 me-0" href="#">Casanova CloudLab</a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#idProyects">Proyectos</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead">
+      <div class="container px-4 px-lg-5 h-100">
+        <div
+          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">
+              Full Stack ASP.NET Azure
+            </h1>
+            <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+            <h2 class="text-white mb-5">
+              Creación de Web Dinámicas con Bases de Datos conectado en Azure
+            </h2>
+            <a class="btn btn-light btn-xl" href="#idProyects">Proyectos!</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-tertiary" id="idNeeds">
+      <div class="container py-5 px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">Cubrimos Tus Necesitades!</h2>
+            <hr class="divider" />
+            <div>
+              <ul class="text-white">
+                <li>
+                  Escalabilidad sin problemas para el crecimiento del negocio.
+                </li>
+                <li>
+                  Integración nativa con Azure para el despliegue en la nube.
+                </li>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+                <li>Soporte completo para lenguajes como C# y VB.NET.</li>
 
+                <li>Alta seguridad integrada en su arquitectura.</li>
+              </ul>
+            </div>
+            <a class="btn btn-light btn-xl" href="#idProyects">Proyectos!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-tertiary" id="idProyects"></section>
+    <div class="container text-center">
+      <div class="row py-5 align-items-start">
+        <div class="col">
+          <div class="card" >
+            <img
+              src="https://picsum.photos/200/150"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sintetizador de Audio</h5>
+              <p class="card-text">
+                Con los aromonicos de Fourier se relacionan las teclas para simular todos los sonidos posibles, y se ven visualmente las senoides.
+              </p>
+              <a href="https://github.com/acasanova009/AudioSynthesizer" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img
+              src="https://picsum.photos/202/150"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Batalla Naval</h5>
+              <p class="card-text ">
+                El punto es derrotar primero al enemigo, y para eso tienes que destruir todas sus barcos. Es por turnos y cada turno tienes una bala.
+              </p>
+              <a href="https://github.com/acasanova009/BatallaNaval" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img
+              src="https://picsum.photos/201/150"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">SimpleHardwareShop</h5>
+              <p class="card-text">
+                Es una tienda con Bases de datos usando un ORM para un cliente que requiere tener todo su inventario y clientes organizados y SQL...
+              </p>
+              <a href="https://github.com/acasanova009/SimpleHardwareShop" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer class="bg-dark py-2">
+      <div class="container px-4 px-lg-5">
+        <div class="small text-center text-white">
+          Copyright © 2024 - Casanova CloudLab
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
